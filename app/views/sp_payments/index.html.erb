@@ -8,18 +8,23 @@
     </div>
   </div>
   <div class = "main-contents">
-    <%= link_to root_path do %>
+    <%@sp_payments.each do |sp_payment|%>
       <div class = "main-content">
+        <div class="content-day">
+          <%=sp_payment.month.name%>
+          <%=sp_payment.day.name %>
+        </div>
+        <div class="comtent-medal">
+          <%="#{sp_payment.medal}枚"%>
+        </div>
+        <div class="comtent-ball">
+          <%="#{sp_payment.ball}玉"%>
+        </div>
+        <div class="btns">
+        <%= link_to '詳細', "/#",  id:'btn',class: 'btn' %>
+        </div>
       </div>
     <%end%>
-    <div class = "main-content">
-    </div>
-    <div class = "main-content">
-    </div>
-    <div class = "main-content">
-    </div>
-    <div class = "main-content">
-    </div>
   </div>
 </div>
 
