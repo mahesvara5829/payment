@@ -16,7 +16,10 @@ class SpPaymentsController < ApplicationController
       render :new
       @sp_payment=SpPayment.new(payment_params)
     end
+  end
 
+  def show
+    @sp_payment=SpPayment.find(params[:id])
   end
 
 
