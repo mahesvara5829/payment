@@ -14,14 +14,18 @@
           <%=sp_payment.month.name%>
           <%=sp_payment.day.name %>
         </div>
+        <%if sp_payment.medal!="0"%>
         <div class="comtent-medal">
           <%="#{sp_payment.medal}枚"%>
         </div>
+        <%end%>
+        <%if sp_payment.ball!="0"%>
         <div class="comtent-ball">
           <%="#{sp_payment.ball}玉"%>
         </div>
+        <%end%>
         <div class="btns">
-        <%= link_to '詳細', "/#",  id:'btn',class: 'btn' %>
+        <%= link_to '詳細', sp_payment_path(sp_payment.id),  id:'btn',class: 'btn' %>
         </div>
       </div>
     <%end%>
