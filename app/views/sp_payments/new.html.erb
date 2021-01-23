@@ -10,13 +10,13 @@
       
 
       
-       <h3>結果入力</h3>
+       <h3 class="new-title">結果入力</h3>
        <div>
         <%= form.collection_select(:store_id, Store.all, :id, :name, {}, {class:"store-select"}) %>
         </div>
         
         <div>
-        <%= form.collection_select(:kisyu_id, Kisyu.all, :id, :name, {}, {class:"kisyu-select"}) %>
+        <%= form.collection_select(:kisyu_id, Kisyu.all, :id, :name, {}, {class:"store-select"}) %>
        </div>
 
 
@@ -39,16 +39,16 @@
         <%= form.text_field :ball, placeholder: "玉収支" ,class:"items-text"%>
         </div>
         <div>
-        <%= form.text_area :memo, placeholder: "メモ", rows: "10" ,class:"items-text"%>
+        <%= form.text_area :memo, placeholder: "メモ", rows: "10" ,class:"items-texts"%>
         </div>
         <div>
-        <%= form.collection_select(:month_id, Month.all, :id, :name, {}, {class:"month-select"}) %>
+        <%= form.collection_select(:month_id, Month.all, :id, :name, {}, {class:"store-select"}) %>
         </div>
         <div>
-        <%= form.collection_select(:day_id, Day.all, :id, :name, {}, {class:"day-select"}) %>
+        <%= form.collection_select(:day_id, Day.all, :id, :name, {}, {class:"store-select"}) %>
         </div>
         <div>
-        <%= form.submit "SEND" %>
+        <%= form.submit "SEND" ,class:"store-select"%>
         </div>
       <% end %>
     </div>

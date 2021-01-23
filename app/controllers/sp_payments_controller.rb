@@ -22,6 +22,13 @@ class SpPaymentsController < ApplicationController
     @sp_payment=SpPayment.find(params[:id])
   end
 
+  def destroy
+    @sp_payment=SpPayment.find(params[:id])
+    if @sp_payment.delete
+      redirect_to root_path
+    end
+  end
+
 
   private
   def payment_params
