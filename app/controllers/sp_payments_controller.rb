@@ -1,7 +1,7 @@
 class SpPaymentsController < ApplicationController
 
   def index
-    @sp_payments=SpPayment.all
+    @sp_payments=SpPayment.includes(:user).order("id DESC")
   end
 
   def new

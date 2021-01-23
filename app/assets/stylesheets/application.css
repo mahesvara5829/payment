@@ -67,6 +67,7 @@ header {
   color : #FFF ;
   background : black ;
   transition : .4s ;
+  border: 1px solid white;
 }
 
 .link:hover {
