@@ -1,0 +1,56 @@
+.main{
+  width : 100% ;
+  height : calc( 100% - 200px ) ;
+  background-color : gray ;
+}
+
+.link-new{
+  text-decoration : none ;
+  font-size : 20px ;
+  color : white ;
+  position : relative ;
+  display : inline-block ;
+  font-weight : bold ;
+  padding : 7px 10px 10px 10px ;
+  text-decoration : none ;
+  color : #FFF ;
+  background : black ;
+  transition : .4s ;
+  margin : 20px 0 0 20px ;
+}
+
+.link-new:hover {
+  background : #91b5fb ;
+}
+
+.main-head{
+  display : flex ;
+}
+
+.new-btn{
+  width : 50% ;
+}
+
+.total{
+  width : 50% ;
+  display : flex ;
+  justify-content: center ;
+  align-items: center;
+}
+
+.total-price{
+  color : white ;
+  font-size : 20px ;
+}
+
+.main-contents{
+  display : flex ;
+  flex-wrap: wrap;  
+}
+
+.main-content{
+  height : 100px ;
+  width : 100px ; 
+  background-color : black ;
+  margin : 20px 10px 20px 10px ; 
+}

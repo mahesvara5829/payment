@@ -13,7 +13,7 @@
 - has_many :payments
 - has_many :comments
 
-## payments テーブル
+## sp_payments テーブル
 
 | Column          | Type    | Options     |
 | --------------- | ------- | ----------- |

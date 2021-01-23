@@ -1,0 +1,2 @@
+class SpPayment < ApplicationRecord
+end

@@ -13,3 +13,74 @@
  *= require_tree .
  *= require_self
  */
+
+ /* リセットCSS */
+body {
+  font-size : 14px ;
+  color : #333 ;
+  margin : 0 auto ;
+  height : 100vh ;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding : 10px 0 ;
+  margin : 0 ;
+}
+
+ul,li {
+  padding : 0 ;
+  margin : 0 ;
+}
+
+
+header {
+  display : flex ;
+  height : 100px ;
+  width : 100% ;
+  background-color : black ;
+}
+
+.header-logo{
+  width : 50% ;
+}
+
+.header-name{
+  margin : 15px 0 0 30px ;
+  color : white ;
+}
+
+.header-lists{
+  width : 50% ;
+  display : flex ;
+  justify-content : space-around ;
+  align-items : center ;
+}
+
+.link{
+  text-decoration : none ;
+  font-size : 20px ;
+  color : white ;
+  position : relative ;
+  display : inline-block ;
+  font-weight : bold ;
+  padding : 7px 10px 10px 10px ;
+  text-decoration : none ;
+  color : #FFF ;
+  background : black ;
+  transition : .4s ;
+}
+
+.link:hover {
+  background : #91b5fb ;
+}
+footer{
+  display : flex ;
+  justify-content : center ;
+  align-items : center ;
+  height : 100px ;
+  width : 100% ;
+  background-color : black ;
+}
+
+.footer-logo{
+  color : white ;
+}
