@@ -3,10 +3,12 @@
     <div class = "new-btn">
       <%= link_to 'TOP', root_path, class:"link-new" %>
     </div>
+    <%if user_signed_in?&&current_user.id==@sp_payment.user_id%>
     <div class = "new-btns">
       <%= link_to '編集', root_path, class:"link-new" %>
-      <%= link_to '削除', root_path, class:"link-new" %>
+      <%= link_to '削除', sp_payment_path(@sp_payment.id), method: :delete, class:"link-new" %>
     </div>
+    <%end%>
   </div>
 
   <div class="show-day">

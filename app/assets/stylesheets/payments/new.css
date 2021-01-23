@@ -1,0 +1,42 @@
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-select{
+  height:50px;
+  width:200px;
+  font-size: 30px;
+  margin: 30px 0 30px 0;
+  background-color: black;
+  color:white;
+}
+
+.new-title{
+  color:white;
+  font-size: 50px;
+}
+
+.items-text{
+  margin: 30px 0 0 0;
+  height:50px;
+  width:200px;
+  background-color: black;
+  color:white;
+  font-size: 30px;
+}
+
+.items-texts{
+  margin: 30px 0 0 0;
+  height:200px;
+  width:300px;
+  background-color: black;
+  color:white;
+  font-size: 30px;
+
+}
+
+::placeholder {
+  color:white;
+}
