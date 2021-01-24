@@ -17,7 +17,7 @@
       <%if user_signed_in?%>
       <div class = "header-lists">
         <div class = "header-list">
-          <%= link_to current_user.nickname, root_path, class:"link" %>
+          <%= link_to 'マイページ', user_path(current_user.id), class:"link" %>
         </div>
         <div class = "header-list">
           <%= link_to 'ログアウト', destroy_user_session_path, method: :delete,class:"link" %>
