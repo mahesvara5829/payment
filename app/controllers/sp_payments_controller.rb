@@ -24,8 +24,29 @@ class SpPaymentsController < ApplicationController
 
   def destroy
     @sp_payment=SpPayment.find(params[:id])
-    if @sp_payment.delete
+    if curent_user.id==@sp_payment.user_id
+      @sp_payment.delete
       redirect_to root_path
+    else
+      render :show
+      @sp_payment=SpPayment.find(params[:id])
+    end
+  end
+
+  def edit
+    @sp_payment=SpPayment.find(params[:id])
+    unless current_user.id==@sp_payment.user_id
+      redirect_to action: :show
+    end
+  end
+
+  def update
+    @sp_payment=SpPayment.find(params[:id])
+    if @sp_payment.update(payment_params)
+      redirect_to action: :show
+    else
+      render :edit
+      @sp_payment=SpPayment.find(params[:id])
     end
   end
 
