@@ -9,6 +9,8 @@ class CreateSpPayments < ActiveRecord::Migration[6.0]
       t.string :recovery_ball,null:false
       t.string :medal,null:false
       t.string :ball,null:false
+      t.integer :srate_id,null:false, numericality: { other_than: 1 } 
+      t.integer :prate_id,null:false, numericality: { other_than: 1 } 
       t.integer :month_id,null:false, numericality: { other_than: 1 } 
       t.integer :day_id,null:false, numericality: { other_than: 1 } 
       t.text :memo,null:false

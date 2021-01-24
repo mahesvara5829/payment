@@ -1,10 +1,21 @@
 <div class="main">
+  <div class = "new-btn">
+    <%= link_to 'TOP', root_path, class:"link-new" %>
+  </div>
   <div class = "main-head">
     <div class = "new-btn">
       <%= link_to '結果作成', new_sp_payment_path, class:"link-new" %>
     </div>
-    <div class = "total">
-      <p class = "total-price">Total収支10000円</p>
+    <div class = "totals">
+      <div class="show-day">
+      <%="総メダル数 #{@sp_payments.sum(:medal).to_i}枚"%>
+      </div>
+      <div class="show-day">
+      <%="総玉数 #{@sp_payments.sum(:ball).to_i}玉"%>
+      </div>
+      <div class="show-day">
+      Total収支 <%=(@sp_payments.sum(:medal).to_i*19.5+@sp_payments.sum(:ball).to_i*3.57).to_i%>円
+      </div>
     </div>
   </div>
   <div class = "main-contents">
