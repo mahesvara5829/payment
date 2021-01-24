@@ -24,7 +24,7 @@ class SpPaymentsController < ApplicationController
 
   def destroy
     @sp_payment=SpPayment.find(params[:id])
-    if curent_user.id==@sp_payment.user_id
+    if current_user.id==@sp_payment.user_id
       @sp_payment.delete
       redirect_to root_path
     else
