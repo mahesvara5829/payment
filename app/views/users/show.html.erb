@@ -1,10 +1,21 @@
 <div class="main">
+  <div class = "new-btn">
+    <%= link_to 'TOP', root_path, class:"link-new" %>
+  </div>
   <div class = "main-head">
     <div class = "new-btn">
       <%= link_to '結果作成', new_sp_payment_path, class:"link-new" %>
     </div>
-    <div class = "total">
-      <p class = "total-price">Total収支10000円</p>
+    <div class = "totals">
+      <div class="show-day">
+      総メダル数 10000枚
+      </div>
+      <div class="show-day">
+      総玉数 10000玉
+      </div>
+      <div class="show-day">
+      Total収支 100000円
+      </div>
     </div>
   </div>
   <div class = "main-contents">

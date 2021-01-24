@@ -39,10 +39,10 @@
         <%= form.text_field :ball, placeholder: "玉収支" ,class:"items-text"%>
         </div>
         <div>
-        <%= form.collection_select(:month_id, [], :id, :name, {}, {class:"store-select"}) %>
+        <%= form.collection_select(:srate_id, Srate.all, :id, :name, {}, {class:"store-select"}) %>
         </div>
         <div>
-        <%= form.collection_select(:month_id, [], :id, :name, {}, {class:"store-select"}) %>
+        <%= form.collection_select(:prate_id, Prate.all, :id, :name, {}, {class:"store-select"}) %>
         </div>
         <div>
         <%= form.text_area :memo, placeholder: "メモ", rows: "10" ,class:"items-texts"%>

@@ -25,6 +25,8 @@
 | recovery_ball   | string  | null: false |
 | medal           | string  | null: false |
 | ball            | string  | null: false |
+| srate_id        | integer | null: false |
+| prate_id        | integer | null: false |
 | month_id        | integer | null: false |
 | day_id          | integer | null: false |
 | memo            | text    | null: false |

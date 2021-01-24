@@ -30,6 +30,7 @@
 
 .main-head{
   display : flex ;
+  height:200px;
 }
 
 .new-btn{
@@ -38,9 +39,6 @@
 
 .total{
   width : 50% ;
-  display : flex ;
-  justify-content: center ;
-  align-items: center;
 }
 
 .total-price{

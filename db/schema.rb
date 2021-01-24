@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2021_01_23_133307) do
     t.string "recovery_ball", null: false
     t.string "medal", null: false
     t.string "ball", null: false
+    t.integer "srate_id", null: false
+    t.integer "prate_id", null: false
     t.integer "month_id", null: false
     t.integer "day_id", null: false
     t.text "memo", null: false
