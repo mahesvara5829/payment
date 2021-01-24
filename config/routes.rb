@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: "sp_payments#index"
 
   resources :sp_payments
+  resources :users,only: :show
   
 end
