@@ -25,7 +25,7 @@
 ## Railsバージョン _6.0.0_
 ### % cd （クローンしたいフォルダー）
 ### % git clone https://github.com/mahesvara5829/payment.git
-### % cd sp-payment
+### % cd payment
 ### % bundle install
 ### % yarn install 
 ### % rails db:create
