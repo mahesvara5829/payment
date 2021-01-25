@@ -10,6 +10,7 @@
         <div class="content-day">
           <%=sp_payment.month.name%>
           <%=sp_payment.day.name %>
+          
         </div>
         <%if sp_payment.medal!="0"%>
         <div class="comtent-medal">
@@ -24,7 +25,9 @@
         <div class="btns">
         <%= link_to '詳細', sp_payment_path(sp_payment.id),  id:'btn',class: 'btn' %>
         </div>
+        
       </div>
+      
     <%end%>
   </div>
 </div>
