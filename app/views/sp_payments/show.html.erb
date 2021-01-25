@@ -55,6 +55,30 @@
   <div class="show-day">
     <%= @sp_payment.memo%>
   </div>
+
+  <div class="container">
+    <% if user_signed_in? %>
+      <%= form_with(model: [@sp_payment, @comment], local: true) do |form| %>
+      <div>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" ,class:"items-texts"%>
+        </div>
+        <div>
+        <%= form.submit "SEND" ,class:"store-select"%>
+        </div>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+  </div>
+   <div class="show-day">
+    <% @comments.each do |comment| %>
+        <p>
+          <strong><%=comment.user.nickname%>：</strong>
+          <%= comment.text %>
+        </p>
+      <% end %>
+   
+   </div>
   
 
 

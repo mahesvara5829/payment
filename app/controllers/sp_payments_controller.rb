@@ -20,6 +20,8 @@ class SpPaymentsController < ApplicationController
 
   def show
     @sp_payment=SpPayment.find(params[:id])
+    @comment = Comment.new
+    @comments = @sp_payment.comments.includes(:user)
   end
 
   def destroy

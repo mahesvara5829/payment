@@ -75,13 +75,13 @@
 
 ## comments テーブル
 
-| Column     | Type    | Options     |
-| ---------- | ------- | ----------- |
-| user_id    | integer | null: false |
-| payment_id | integer | null: false |
-| text       | text    | null: false |
+| Column        | Type    | Options     |
+| ------------- | ------- | ----------- |
+| user_id       | integer | null: false |
+| sp_payment_id | integer | null: false |
+| text          | text    | null: false |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :payment
+- belongs_to :sp_payment
