@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   def create
 
   comment=Comment.create(comment_params)
+  #render json:{post:comment}
   redirect_to "/sp_payments/#{comment.sp_payment.id}"
 
   end
