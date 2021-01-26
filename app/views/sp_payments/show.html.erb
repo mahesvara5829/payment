@@ -58,12 +58,12 @@
 
   <div class="container">
     <% if user_signed_in? %>
-      <%= form_with(model: [@sp_payment, @comment], local: true) do |form| %>
+      <%= form_with(model: [@sp_payment, @comment],id: 'form', local: true) do |form| %>
       <div>
         <%= form.text_area :text, placeholder: "コメントする", rows: "2" ,class:"items-texts"%>
         </div>
         <div>
-        <%= form.submit "SEND" ,class:"store-select"%>
+        <%= form.submit "SEND" ,class:"store-select", id:"submit"%>
         </div>
       <% end %>
     <% else %>
