@@ -17,7 +17,7 @@
  //   const list=document.getEeventListener("list");
  //   const formText=document.getEventListener("content");
  //   const HTML=`
- //   <div class="ppp" data-id=<%=comment.sp_payment.id%>>
+ //   <div class="ppp" data-id=<%=comment.sp_payment_id%>>
  //   <strong>${comment.user.nickname}：</strong>
  //     ${comment.text}
  //   </div>`;

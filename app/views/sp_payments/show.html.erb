@@ -74,7 +74,7 @@
   </div>
    <div class="show-day">
     <% @comments.each do |comment| %>
-        <div class="ppp" data-id=<%=comment.sp_payment.id%>>
+        <div class="ppp" data-id=<%=comment.sp_payment_id%>>
           <strong><%=comment.user.nickname%>：</strong>
           <%= comment.text %>
         </div>
