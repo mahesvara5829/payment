@@ -1,7 +1,7 @@
 # アプリ名 sp-payment
 
 # アプリケーションの概要  
-### パチンコ、スロットの収支管理アプリ
+パチンコ、スロットの収支管理アプリ
 
 # https://sp-payment.herokuapp.com/
 
